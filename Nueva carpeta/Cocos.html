@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cocos de Acapulco El May</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #121212;
+            color: white;
+        }
+
+        /* Estilo para la pantalla de carga */
+        #loading-screen {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: #000;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            z-index: 9999;
+        }
+
+        #loading-screen img {
+            width: 150px;
+            height: auto;
+        }
+
+        #loading-screen p {
+            color: #FFD700;
+            font-size: 1.5rem;
+            margin-top: 1rem;
+        }
+
+        /* Estilos normales del sitio */
+        header {
+            text-align: center;
+            padding: 2rem 0;
+            background-color: #1d1d1d;
+            color: #FFD700;
+            font-size: 2.5rem;
+            font-weight: bold;
+            letter-spacing: 2px;
+        }
+
+        nav {
+            background-color: #000000;
+            padding: 1rem 0;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.6);
+        }
+
+        nav a {
+            color: #FFD700;
+            text-decoration: none;
+            font-size: 1.2rem;
+            font-weight: bold;
+            transition: all 0.3s ease;
+        }
+
+        nav a:hover {
+            color: #ffffff;
+            text-shadow: 0px 0px 5px #FFD700;
+        }
+
+        .main-image {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 80vh;
+            background: url('https://scontent.fmex3-3.fna.fbcdn.net/v/t39.30808-6/485598882_662168846322923_6340713467981703782_n.jpg?_nc_cat=105&ccb=1-7&_nc_sid=833d8c&_nc_ohc=-ddK3D74_mgQ7kNvwEpYQYZ&_nc_oc=Adn_Ejtz1VquI7Tqm2iNnmpn4er-bHozI1x57MTP8bhYNF8jKu5B3R3eCtjXVi2tttlWPZ8M7tjUkA5XAti7opvC&_nc_zt=23&_nc_ht=scontent.fmex3-3.fna&_nc_gid=dZu7YiSghp1DQr22lrl5ag&oh=00_AfEZCuisSzshXyrk83Da960yB4Wqgej3GfH5Dn-ZvfYflg&oe=6807BAF8') no-repeat center center;
+            background-size: cover;
+        }
+
+        footer {
+            text-align: center;
+            padding: 1rem 0;
+            background-color: #1d1d1d;
+            color: #FFD700;
+            font-size: 1rem;
+        }
+    </style>
+    <script>
+        window.onload = function () {
+            // Oculta la pantalla de carga después de 3 segundos
+            setTimeout(() => {
+                document.getElementById('loading-screen').style.display = 'none';
+            }, 3000);
+        };
+    </script>
+</head>
+<body>
+    <!-- Pantalla de carga -->
+    <div id="loading-screen">
+        <img src="https://www.bing.com/th/id/OGC.3db0b57cfd3bee1fe7166ca8e9d97560?pid=1.7&rurl=https%3a%2f%2fpa1.aminoapps.com%2f6814%2fb54b324cd6946d2716b0478b7288cf1b76e1f0c2_hq.gif&ehk=hV1qU9j5QEWnpNguTCwV5A%2fcRjwCKK3Wmb8IB9l743k%3d" alt="Coco">
+        <p>Cargando...</p>
+    </div>
+    <header>
+        Cocos de Acapulco El May
+    </header>
+    <nav>
+        <a href="#historia">Historia</a>
+        <a href="#productos">Productos</a>
+        <a href="#contacto">Contacto</a>
+        <a href="#galeria">Galería</a>
+        <a href="#soporte">Soporte</a>
+    </nav>
+    <div class="main-image">
+        <!-- Imagen de fondo ya incluida -->
+    </div>
+    <footer>
+        © 2025 Cocos de Acapulco El May
+    </footer>
+</body>
+</html>
